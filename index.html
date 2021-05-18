@@ -1,0 +1,76 @@
+<script>
+  @import url('https://fonts.googleapis.com/css2?family=Recursive:wght@500&display=swap');
+  body {
+    font-family: 'Recursive', sans-serif;
+  }
+  
+</script>
+<html>
+  <body class="container">
+    <!-- inline css is never a good thing -->
+    <link rel="stylesheet" href="/static/index.css" />
+    <link rel="stylesheet" href="/static/expand.css" />
+    <link rel="stylesheet" href="/static/accordion.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@500&display=swap" rel="stylesheet">
+    <center>
+      <title>Drinks Cabin</title>
+      <h1 class="title">Drinks cabin</h1>
+      <h2><a href="/rules">Rules</a></h2>
+      <h2><a href="/guide">Beginner's Guide</a></h2>
+    </center>
+      {% if cookie == "False" %}
+      <div class="auth">
+      <div class="expandable section auth-box">
+        <h2>Signup</h2>
+        <div class="expand">
+          <div class="login-form-body">
+            <div class="login-form-heading">
+              <br>
+            </div>
+            <div class="login-form-form">
+              <form method="POST" action="{{ url_for('signup') }}">
+                <input class="login-form-input" placeholder="username" name="names">
+                <input class="login-form-input" placeholder="password" type="password" name="passwords">
+                <input class="login-form-input" placeholder="confirm password" type="password" name="passwordagain"><br>
+                <button class="login-form-button">signup</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="expandable section auth-box">
+        <h2>Login</h2>
+        <div class="expand">
+          <div class="login-form-body">
+            <div class="login-form-heading">
+              <br>
+            </div>
+            <div class="login-form-form">
+              <form method="POST" action="../login">
+                <input class="login-form-input" placeholder="username" name="namelogin">
+                <input class="login-form-input" placeholder="password" type="password" name="passwordl"><br>
+                <button class="login-form-button">login</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% else %}
+    </div>
+    <ul>
+      <li><a href="/profile">Your profile</a></li>
+      <li><a href="/commands">Commands</a></li>
+      <li><a href="/shop">Items and Shop</a></li>
+      <li><a href="/straws">Straws</a></li>
+      <li><a href="/gambling">Gambling</a></li>
+      <li><a href="/leaderboards">Leaderboards</a></li>
+      
+      <li><a href="/logout">Logout</a></li>
+    </ul>
+    {% endif %}
+    <script src="/static/expand.js"></script>
+    <script src="/static/accordion.js"></script>
+  </body>
+</html>
