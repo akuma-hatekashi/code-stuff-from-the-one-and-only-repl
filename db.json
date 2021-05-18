@@ -1,0 +1,52 @@
+{
+    "file.png": {
+        "name": "file.png",
+        "type": "image/png",
+        "size": 2444
+    },
+    "20210517_130706.jpg": {
+        "name": "20210517_130706.jpg",
+        "type": "image/jpeg",
+        "size": 28992
+    },
+    "beep.mp3": {
+        "name": "beep.mp3",
+        "type": "audio/mpeg",
+        "size": 15932
+    },
+    "kwb.jpg": {
+        "name": "kwb.jpg",
+        "type": "image/jpeg",
+        "size": 24803
+    },
+    "1-kwb.jpg": {
+        "name": "1-kwb.jpg",
+        "type": "image/jpeg",
+        "size": 24803
+    },
+    "repl.png": {
+        "name": "repl.png",
+        "type": "image/png",
+        "size": 78833
+    },
+    "AP Seminar Task 2 Essay(1).pdf": {
+        "name": "AP Seminar Task 2 Essay(1).pdf",
+        "type": "application/pdf",
+        "size": 117099
+    },
+    "yeti.png": {
+        "name": "yeti.png",
+        "type": "image/png",
+        "size": 23434
+    },
+    "daniel_doing_bad_things.png": {
+        "name": "daniel_doing_bad_things.png",
+        "type": "image/png",
+        "size": 435141
+    },
+    "pydroid.jpg": {
+        "name": "pydroid.jpg",
+        "type": "image/jpeg",
+        "size": 4175
+    }
+}
