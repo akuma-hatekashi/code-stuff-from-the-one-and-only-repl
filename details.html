@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= filename %></title>
+    <link href="/file.png" rel="icon">
+    <link href="/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div><br>
+      <h1><%= filename %></h1>
+      <h3>File size: <%= size %></h3>
+      <h3>File type: <%= type %></h3>
+      <h3>File link:</h3>
+      <input value="https://file-uploader.ruiwenge2.repl.co/uploads/<%= filename %>" type="text" readonly><button onclick="copyLink()" style="height:40px; margin-left:10px">Copy</button><br><br>
+      <button onclick="window.open('/details/<%= filename %>/download')">Download file</button><br><br>
+      <button onclick="location.href = '/'">Upload another</button><br><br>
+    </div>
+    <script>
+      function copyLink(){
+        document.querySelector("input").select();
+        document.execCommand("copy");
+        window.getSelection().removeAllRanges();
+      }
+    </script>
+  </body>
+</html>
